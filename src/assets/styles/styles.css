@@ -1,0 +1,351 @@
+button,
+.input-search {
+  background-color: transparent;
+  color: white;
+}
+::placeholder {
+  color: white;
+}
+.login:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+input {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: white;
+}
+.p-button:enabled:focus,
+.input-search:enabled:focus {
+  box-shadow: none;
+  border-color: white;
+}
+.input-search:enabled:hover {
+  border-color: white;
+}
+.p-button {
+  background-color: transparent;
+  border-color: #ced4da;
+}
+.p-button:enabled:hover {
+  background-color: transparent;
+  border-color: white;
+  cursor: pointer;
+}
+.p-button-label {
+  font-weight: 400;
+}
+.p-menu .p-menuitem-link .p-menuitem-text,
+.p-menu .p-menuitem-link .p-menuitem-icon {
+  font-size: 1.125rem;
+  color: #0d253f;
+}
+.p-menu .p-menuitem-text {
+  line-height: 1.2;
+}
+.menu-bar.p-menu .p-menuitem-link:hover {
+  background: #0d253f;
+}
+.menu-bar.p-menu .p-menuitem-link:focus {
+  box-shadow: none;
+}
+.menu-bar.p-menu .p-menuitem-link:hover .p-menuitem-text {
+  color: white;
+}
+
+.menu-bar.p-menu .p-menuitem-link:not(.p-disabled):hover .p-menuitem-icon {
+  color: white;
+}
+
+.bg-color {
+  background-color: #0d253f;
+}
+
+.p-dialog .p-dialog-content {
+  color: #0d253f;
+  font-size: 18px;
+}
+.dialog-input-fields {
+  width: 45%;
+}
+.dialog-input {
+  border: 1.5px solid #0d253f;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 100%;
+}
+.p-dialog .p-dialog-content:last-of-type {
+  max-width: 35rem;
+  /* background-image: url("../images/dialogboxbg.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p-dialog .p-dialog-header {
+  padding: 0.5rem 1.7rem;
+}
+
+.dialog-btn.p-button {
+  background-color: #0d253f;
+}
+.dialog-btn.p-button:hover {
+  background-color: rgb(177, 177, 177);
+  border-color: #0d253f;
+  color: #0d253f;
+}
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+  color: #0d253f;
+}
+.p-dialog .p-dialog-header .p-dialog-header-icon:enabled:hover {
+  background: #0d253f;
+  color: white;
+}
+.p-dialog .p-dialog-header .p-dialog-header-icon:focus {
+  box-shadow: 0 0 0 0.2rem #0d253f;
+}
+.Knob svg {
+  width: 29px;
+  height: 29px;
+}
+.p-card .p-card-body {
+  padding: 5px;
+}
+.p-card {
+  box-shadow: none;
+}
+.p-card .p-card-content {
+  padding: 5px;
+}
+.movieCard {
+  width: 13rem;
+  border: 1px solid #0d253fb6;
+}
+.infoCard {
+  width: 15rem;
+}
+.card-btn {
+  background-color: #0d253f;
+  color: white;
+  height: 22px;
+
+  width: 8rem;
+}
+.p-button:enabled:hover {
+  background-color: white;
+  border: 1px solid #0d253f;
+  color: #0d253f;
+}
+.menu-bar.p-menu {
+  width: 15rem;
+}
+
+/* Movie Description section */
+/* *{
+  background-color: ;
+} */
+.description {
+  color: wheat;
+}
+.description h3 {
+  letter-spacing: 2px;
+  font-size: 23px;
+}
+.cast {
+  color: #0d253f;
+}
+.reviews {
+  width: 300px;
+}
+.description p {
+  word-spacing: 2px;
+}
+.keywords {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.keywords span {
+  background-color: #0d253f;
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  color: white;
+}
+.swiper-slide img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.swiper-slide {
+  border-radius: 10px;
+  background-color: #0d253f;
+  color: white;
+}
+.swiper-slide h5,
+.swiper-slide p {
+  color: white;
+}
+.reviews {
+  width: 100%;
+  background-color: #0d253f;
+  color: #ced4da;
+}
+.reviews p {
+  word-spacing: 2px;
+  line-height: 1.2;
+  font-size: 15px;
+}
+
+.p-rating .p-rating-item.p-rating-item-active .p-rating-icon {
+  color: gold;
+}
+.p-rating .p-rating-item .p-rating-icon {
+  color: white;
+}
+.form-btn {
+  padding: 10px 15px;
+  background-color: #0d253f;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.movieListCard {
+  background-color: #0d253f;
+  color: white;
+}
+
+.caste strong {
+  color: #0d253f;
+  font-size: 15px;
+}
+.powered-devnode {
+  border-radius: 20px !important;
+  width: 100%;
+  background: white;
+  color: #0d253f;
+}
+#search {
+  background-color: transparent;
+  color: white;
+  border-color: #ced4da;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.pi-search {
+  font-size: 18px;
+  color: white;
+}
+.search-label {
+  border: 1px solid #ced4da;
+  border-left: none;
+  border-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.p-inputtext:enabled:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: none;
+  border-color: #fff;
+}
+.suggestions {
+  display: flex;
+  flex-direction: row;
+  min-width: 200px;
+}
+
+.suggestions img {
+  width: 50px;
+  height: 50px;
+}
+
+.detail-breakpoint {
+  max-width: 25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.infoCardTitle {
+  height: 1.3rem;
+}
+.p-menu {
+  border: none;
+  border-radius: 20px;
+}
+.visibility{
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .detail-breakpoint-ellipse {
+    white-space: unset !important;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .menu-bar.p-menu {
+    width: 10rem;
+  }
+  .powered-devnode {
+    width: 10rem;
+  }
+  .description h3 {
+    letter-spacing: 2px;
+    font-size: 13px;
+  }
+  .movieCard {
+    width: 9rem;
+  }
+  .infoCard {
+    width: 10rem;
+  }
+  .releaseDate {
+    font-size: 6px;
+  }
+  .removeOnResponsive {
+    display: none;
+  }
+  #search {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .display-none {
+    display: none !important;
+  }
+  .description h3 {
+    font-size: 18px;
+  }
+  .reviews .date {
+    display: none;
+  }
+  .description h3 {
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+
+  .detials,
+  .small-view,
+  .main-container {
+    width: 100% !important;
+    padding: 0px 20px;
+    margin: 0px;
+  }
+  .movieListCard {
+    width: 6rem;
+    height: 10rem;
+    margin: 10px;
+  }
+  .movieListCard .text-base {
+    font-size: 1rem;
+    padding: 0px;
+  }
+  .visibility{
+    display: block;
+  }
+}
