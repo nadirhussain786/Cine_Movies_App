@@ -18,16 +18,17 @@ export const MovieReviews = ({ movieReviewData }) => {
               <strong>created_at:</strong> {currValue.created_at}
             </p>
           </div>
-          <div className="flex flex-column justify-content-center">
+          {/* <div className="flex flex-column justify-content-center"> */}
             <p className="my-2 reviews-detials">{currValue.content.slice(0, 250)}</p>
-          </div>
-          <div className="card flex justify-content-center my-1">
+          {/* </div> */}
+          {/* <div className="card flex justify-content-center "> */}
             <Rating
               value={currValue.author_details.rating / 2}
               readOnly
               cancel={false}
+              className="flex justify-content-center my-1"
             />
-          </div>
+          {/* </div> */}
         </div>
       ))}
     </div>

@@ -2,7 +2,6 @@ import React from "react";
 import { Dialog } from "primereact/dialog";
 import { logo } from "../assets/images";
 import { Formik, Form, Field } from "formik";
-import { dialogBoxBg } from "../assets/images";
 import * as Yup from "yup";
 import { ref } from "yup";
 
@@ -43,7 +42,7 @@ const LoginSchema = Yup.object().shape({
 
 export const LoginForm = ({ isLoginFormOpen, setIsLoginFormOpen }) => {
   return (
-    <div style={{ backgroundImage: `url(${dialogBoxBg})` }}>
+    <div>
       <Dialog
         header={<img src={logo} alt="logo" className="w-3rem h-3rem" />}
         visible={isLoginFormOpen}

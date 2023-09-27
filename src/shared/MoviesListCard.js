@@ -1,9 +1,12 @@
 import React from "react";
 import { Rating } from "primereact/rating";
 import { Link } from "react-router-dom";
-const MoviesListCard = ({ data }) => {
+const MoviesListCard = ({ data,title }) => {
   return (
     <div>
+      <div>
+        <h2 className="px-3">{title}</h2>
+      </div>
       <div className="flex flex-wrap justify-content-evenly align-content-center md:justify-content-evenly sm:justify-content-evenly p-1">
         {data.map((currValue, i) => (
           <Link to={`/movie/details/${currValue.id}`} key={"popular" + i}>

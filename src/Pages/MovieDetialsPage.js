@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ReuseableSwiper from "../components/ReuseableSwiper";
+import ReuseableSwiper from "../shared/CustomSwiper";
 import { useGetSingleMovieDetailQuery } from "../Services/MoviesApi";
 import { useGetKeywordsRelatedMovieQuery } from "../Services/MoviesApi";
 import { useGetMovieCasteQuery } from "../Services/MoviesApi";
@@ -9,6 +9,7 @@ import { Button } from "primereact/button";
 import { Loader } from "../shared/Loader";
 import { useGetMovieReviewsQuery } from "../Services/MoviesApi";
 import { MovieReviews } from "../components/MovieReviews";
+import { ApiErrorLoader } from "../shared/ApiErrorLoader";
 
 export const MovieDetialsPage = () => {
   const { id } = useParams();
@@ -37,18 +38,12 @@ export const MovieDetialsPage = () => {
 
   if (
     error ||
-    keywordError ||
-    casteError ||
-    similarMovieError ||
-    movieReviewError
+    keywordError
   )
     return <span>Oh no, there was an error</span>;
   if (
     isLoading ||
-    keywordIsLoading ||
-    casteIsLoading ||
-    similarMovieIsLoading ||
-    movieReviewIsLoading
+    keywordIsLoading 
   )
     return <Loader />;
 
@@ -91,17 +86,23 @@ export const MovieDetialsPage = () => {
           ))}
         </div>
         <h2 className="my-2 text-3xl cast">Cast</h2>
+        <ApiErrorLoader error={casteError} isLoading={casteIsLoading}>
         <ReuseableSwiper data={casteData.cast} />
+        </ApiErrorLoader>
         {movieReviewData.results !== 0 ? (
           <div>
             <h2 className="my-2 text-3xl cast">Reviews</h2>
+            <ApiErrorLoader error={movieReviewError} isLoading={movieReviewIsLoading}>
             <MovieReviews movieReviewData={movieReviewData.results} />
+            </ApiErrorLoader>
           </div>
         ) : null}
         {similarMovieData.results.length !== 0 ? (
           <div>
             <h2 className="my-2 text-3xl cast">Similar Movies</h2>
+            <ApiErrorLoader error={similarMovieError} isLoading={similarMovieIsLoading}>
             <ReuseableSwiper data={similarMovieData.results} areMovies={true} />
+            </ApiErrorLoader>
           </div>
         ) : null}
       </div>

@@ -10,6 +10,7 @@ import { Layout } from "./layouts/Layout";
 import { PopularMovies } from "./Pages/PopularMovies";
 import { UpcommingMovies } from "./Pages/UpcommingMovies";
 import { ActorDetials } from "./Pages/ActorDetials";
+import { TopRatedMovies } from "./Pages/TopRatedMovies";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="/movie/details/:id" element={<MovieDetialsPage />} />
           <Route path="/movie/popular" element={<PopularMovies />} />
           <Route path="/movie/upcomming" element={<UpcommingMovies />} />
-          <Route path="/movie/toprated" element={<UpcommingMovies />} />
+          <Route path="/movie/toprated" element={<TopRatedMovies />} />
           <Route path="/cast/details/:id" element={<ActorDetials />} />
         </Routes>
       </Layout>

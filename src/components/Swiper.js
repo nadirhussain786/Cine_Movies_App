@@ -34,13 +34,7 @@ export const SwiperContainer = () => {
           <div key={i + "swiper"}>
             <SwiperSlide>
               <Link to={`/movie/details/${currValue.id}`} key={i}>
-                <div
-                  className="absolute  left-0  bottom-0 border-round-sm m-2 p-1 w-7"
-                  style={{
-                    backgroundColor: "rgba(255, 255, 255, 0.834)",
-                    color: "#0d253f",
-                  }}
-                >
+                <div className="absolute  left-0  bottom-0 border-round-sm m-2 p-1 w-7 swiper-info">
                   <h3>{currValue.title}</h3>
                   <span className="detail-breakpoint">
                     {currValue.overview}

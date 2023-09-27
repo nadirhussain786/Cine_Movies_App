@@ -224,6 +224,7 @@ input {
   border-radius: 20px !important;
   width: 100%;
   background: white;
+  width: 240px;
   color: #0d253f;
 }
 #search {
@@ -278,8 +279,12 @@ input {
   border: none;
   border-radius: 20px;
 }
-.visibility{
+.visibility {
   display: none;
+}
+.swiper-info {
+  background-color:rgba(255, 255, 255, 0.834);
+  color:#0d253f;
 }
 @media screen and (max-width: 992px) {
   .detail-breakpoint-ellipse {
@@ -315,9 +320,6 @@ input {
   }
 }
 @media screen and (max-width: 630px) {
-  .display-none {
-    display: none !important;
-  }
   .description h3 {
     font-size: 18px;
   }
@@ -327,6 +329,9 @@ input {
   .description h3 {
     letter-spacing: 1px;
     font-size: 13px;
+  }
+  .main-container h4{
+    color: #0d253f;
   }
 
   .detials,
@@ -345,7 +350,7 @@ input {
     font-size: 1rem;
     padding: 0px;
   }
-  .visibility{
+  .visibility {
     display: block;
   }
 }

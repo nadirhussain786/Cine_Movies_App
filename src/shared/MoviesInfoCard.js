@@ -11,13 +11,12 @@ export const MoviesInfoCard = ({ title, data }) => {
     </div>
   );
   const footer = (
-    <div className="flex flex-wrap justify-content-center gap-2 py-3">
       <Link
         to={title === "Popular Movies" ? "/movie/popular" : "/movie/upcomming"}
+        className="flex  justify-content-center"
       >
         <Button className="card-btn mb-1" label="More" />
       </Link>
-    </div>
   );
 
   return (
