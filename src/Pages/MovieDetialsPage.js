@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ReuseableSwiper from "../shared/CustomSwiper";
+import ReuseableSwiper from "../components/ReuseableSwiper";
 import { useGetSingleMovieDetailQuery } from "../Services/MoviesApi";
 import { useGetKeywordsRelatedMovieQuery } from "../Services/MoviesApi";
 import { useGetMovieCasteQuery } from "../Services/MoviesApi";

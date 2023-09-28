@@ -10,8 +10,7 @@ import { Pagination } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 
-export const SwiperContainer = ({data}) => {
-
+export const SwiperContainer = ({ data }) => {
   return (
     <div className="mySwiper">
       <Swiper

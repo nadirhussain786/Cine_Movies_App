@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../assets/styles/TopRatedSwiper.css";
 import { useGetTopRatedMoviesDataQuery } from "../Services/MoviesApi";
-import ReuseableSwiper from "../shared/CustomSwiper";
+import ReuseableSwiper from "./ReuseableSwiper";
 import { ApiErrorLoader } from "../shared/ApiErrorLoader";
 export const TopRatedMoviesSwiper = () => {
   const { data, error, isLoading } = useGetTopRatedMoviesDataQuery();

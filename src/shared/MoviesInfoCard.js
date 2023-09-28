@@ -11,12 +11,12 @@ export const MoviesInfoCard = ({ title, data }) => {
     </div>
   );
   const footer = (
-      <Link
-        to={title === "Popular Movies" ? "/movie/popular" : "/movie/upcomming"}
-        className="flex  justify-content-center"
-      >
-        <Button className="card-btn mb-1" label="More" />
-      </Link>
+    <Link
+      to={title === "Popular Movies" ? "/movie/popular" : "/movie/upcomming"}
+      className="flex  justify-content-center"
+    >
+      <Button className="card-btn mb-1" label="More" />
+    </Link>
   );
 
   return (
@@ -24,7 +24,7 @@ export const MoviesInfoCard = ({ title, data }) => {
       <div className="pb-3 infoCard">
         <Card footer={footer} header={header} className="border-round-3xl">
           <div className="flex justify-content-center flex-column align-items-center">
-            {data.results.slice(0, 3).map((currValue, i) => (
+            {data?.results.slice(0, 3).map((currValue, i) => (
               <Link to={`/movie/details/${currValue.id}`} key={i}>
                 <div className="flex justify-content-between align-items-center p-1  border-round-3xl mb-1 movieCard">
                   <div className="flex align-items-center gap-2">
@@ -58,7 +58,7 @@ export const MoviesInfoCard = ({ title, data }) => {
                       />
                     ) : (
                       <span className="text-xs releaseDate flex flex-column">
-                        <b className="removeOnResponsive"> Release Date:</b> 
+                        <b className="removeOnResponsive"> Release Date:</b>
                         <span>{currValue.release_date}</span>
                       </span>
                     )}

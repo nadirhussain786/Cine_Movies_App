@@ -2,7 +2,7 @@ import React from "react";
 import { Rating } from "primereact/rating";
 import { Avatar } from "primereact/avatar";
 
-export const MovieReviews = ({ movieReviewData }) => {
+export const MovieReviews = ({ movieReviewData = [] }) => {
   return (
     <div>
       {movieReviewData?.slice(0, 3).map((currValue) => (
@@ -19,15 +19,17 @@ export const MovieReviews = ({ movieReviewData }) => {
             </p>
           </div>
           {/* <div className="flex flex-column justify-content-center"> */}
-            <p className="my-2 reviews-detials">{currValue.content.slice(0, 250)}</p>
+          <p className="my-2 reviews-detials">
+            {currValue.content.slice(0, 250)}
+          </p>
           {/* </div> */}
           {/* <div className="card flex justify-content-center "> */}
-            <Rating
-              value={currValue.author_details.rating / 2}
-              readOnly
-              cancel={false}
-              className="flex justify-content-center my-1"
-            />
+          <Rating
+            value={currValue.author_details.rating / 2}
+            readOnly
+            cancel={false}
+            className="flex justify-content-center my-1"
+          />
           {/* </div> */}
         </div>
       ))}
