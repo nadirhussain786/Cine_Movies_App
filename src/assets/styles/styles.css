@@ -114,6 +114,7 @@ input {
 }
 .p-card {
   box-shadow: none;
+  color: #0d253f;
 }
 .p-card .p-card-content {
   padding: 5px;
@@ -145,6 +146,7 @@ input {
 /* *{
   background-color: ;
 } */
+
 .description {
   color: wheat;
 }
@@ -255,7 +257,7 @@ input {
 .suggestions {
   display: flex;
   flex-direction: row;
-  min-width: 200px;
+  width: 100%;
 }
 
 .suggestions img {
@@ -269,7 +271,7 @@ input {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 7;
 }
 
 .infoCardTitle {
@@ -283,15 +285,15 @@ input {
   display: none;
 }
 .swiper-info {
-  background-color:rgba(255, 255, 255, 0.834);
-  color:#0d253f;
+  background-color: rgba(255, 255, 255, 0.834);
+  color: #0d253f;
 }
 @media screen and (max-width: 992px) {
   .detail-breakpoint-ellipse {
     white-space: unset !important;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
   }
   .menu-bar.p-menu {
     width: 10rem;
@@ -320,6 +322,14 @@ input {
   }
 }
 @media screen and (max-width: 630px) {
+  .detail-breakpoint {
+    max-width: 25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
   .description h3 {
     font-size: 18px;
   }
@@ -330,10 +340,9 @@ input {
     letter-spacing: 1px;
     font-size: 13px;
   }
-  .main-container h4{
+  .main-container h4 {
     color: #0d253f;
   }
-
   .detials,
   .small-view,
   .main-container {

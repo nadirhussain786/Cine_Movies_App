@@ -11,6 +11,7 @@ import { PopularMovies } from "./Pages/PopularMovies";
 import { UpcommingMovies } from "./Pages/UpcommingMovies";
 import { ActorDetials } from "./Pages/ActorDetials";
 import { TopRatedMovies } from "./Pages/TopRatedMovies";
+import { RouteNotFound } from "./components/RouteNotFound";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/movie/upcomming" element={<UpcommingMovies />} />
           <Route path="/movie/toprated" element={<TopRatedMovies />} />
           <Route path="/cast/details/:id" element={<ActorDetials />} />
+          <Route path="*" element={<RouteNotFound /> } />
         </Routes>
       </Layout>
     </div>

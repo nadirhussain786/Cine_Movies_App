@@ -11,7 +11,7 @@ export const TopRatedMoviesSwiper = () => {
   return (
     <div>
       <ApiErrorLoader error={error} isLoading={isLoading}>
-        <ReuseableSwiper data={data.results} areMovies={true} />
+        <ReuseableSwiper data={data?.results} areMovies={true} />
       </ApiErrorLoader>
     </div>
   );

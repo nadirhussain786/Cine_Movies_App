@@ -5,7 +5,7 @@ import { Avatar } from "primereact/avatar";
 export const MovieReviews = ({ movieReviewData }) => {
   return (
     <div>
-      {movieReviewData.slice(0, 3).map((currValue) => (
+      {movieReviewData?.slice(0, 3).map((currValue) => (
         <div className="reviews flex flex-column p-2 my-2 border-round-lg">
           <div className="flex flex-row justify-content-between align-items-center	py-2">
             <Avatar

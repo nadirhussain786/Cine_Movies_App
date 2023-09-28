@@ -8,7 +8,7 @@ const MoviesListCard = ({ data,title }) => {
         <h2 className="px-3">{title}</h2>
       </div>
       <div className="flex flex-wrap justify-content-evenly align-content-center md:justify-content-evenly sm:justify-content-evenly p-1">
-        {data.map((currValue, i) => (
+        {data?.map((currValue, i) => (
           <Link to={`/movie/details/${currValue.id}`} key={"popular" + i}>
             <div className="w-10rem h-22rem overflow-hidden border-round-lg  my-2 movieListCard">
               <img

@@ -12,7 +12,7 @@ export const Sidebar = () => {
       <Menu className="mb-2 menu-bar" model={items} />
       <div className="text-center p-3 my-2 border-round-md powered-devnode">
       <span>
-        Powered by <strong>Devnodes</strong>
+        Powered by <strong>Nadir Hussain</strong>
       </span>
     </div>
     </div>
